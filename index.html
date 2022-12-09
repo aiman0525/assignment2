@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="html/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <style>
+        .abc {
+            color: red;
+        }
+
+        .emphasized {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1</h1>
+    <div>
+        <h1>Applying inline css</h1>
+        <p>Lorem ipsum dolor <span class="abc">changing colour of specific words </span>amet consectetur adipisicing
+            elit. Omnis magni odio adipisci modi error distinctio
+            dignissimos quibusdam quae accusantium et <strong>specific bold words in a paragraph</strong> magnam minima
+            reiciendis at, quidem aliquid ea itaque
+            voluptas?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem impedit
+            quisquam voluptates voluptatibus.
+            Debitis repellendus <span class="underline"><em> Italicize Text by using Emphasis and underline it also
+                </em> </span>, commodi error cum accusantium atque vel enim nihil placeat voluptas numquam,
+            corporis molestiae fugit.</p>
+        <p style="background-color: pink;"> ipsum dolor sit amet consectetur adipisicing elit. Animi optio consectetur
+            sunt possimus repudiandae,
+            soluta perferendis excepturi laboriosam blanditiis numquam eos dicta amet ut enim? Quia perspiciatis
+            molestias
+            maiores consequatur!</p>
+    </div>
+
+    <div class="stylesheet">
+        <h1>Applying extenal css</h1>
+
+        Lorem ipsum dolor, sit amet consectetur <span class="clr">changing colour of specific words </span>adipisicing
+        elit. Eaque nihil <em>--------------Italicize Text by using Emphasis in external css file
+            ---------------</em>delectus tempora, in possimus saepe
+        doloribus aliquid facilis velit laboriosam re<span class="bolded"> bold words by applying external css</span>
+        consequuntur, labore quidem. Minus ratione asperiores
+        quaerat <span class="underlineex">underlining specific words by appling external css </span>quam
+        rem!hkkjdhjdvjjbkvfj jvhgf jfhhf jjkksjd mhfjhf jhfjejnfd
+    </div>
+    <div>
+        <h1>2-Changing colour of page after every 5 second</h1>
+        <script>
+            setInterval(
+                function () {
+                    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+                    document.body.style.backgroundColor = "#" + randomColor;
+                }, 5000);
+        </script>
+    </div>
+    <div>
+
+        <script type="text/javascript">
+            alert("hello welcome");
+        </script>
+    </div>
+    <h1>3-Simple form with a submit button which redirected you to a new page</h1><br>
+    <div>
+        <a href="html/sform.html">Simple form</a>
+    </div>
+    <div>
+        <h1>4.Bold, Italic and Underline words by using javascript </h1>
+        <h2>Italic</h2>
+
+        <div id="text">Integral university</div><br><br>
+
+        <button onclick="myFunction()">
+            Italic
+        </button>
+
+        <script type="text/javascript">
+            var str = document.getElementById("text");
+            var strItalic = new String("Integral university");
+            function myFunction() {
+
+                // Toggling between normal and italic
+                if (str.innerHTML == "Integral university") {
+
+                    // Using italics() to italicize
+                    str.innerHTML = strItalic.italics();
+                }
+                else {
+                    str.innerHTML = "Integral university";
+                }
+            }   
+        </script>
+    </div>
+
+    <div>
+        <h2>Bold</h2>
+        <p id="demo1">Integral university</p>
+
+        <script type="text/javascript">
+            function mybold() {
+                let text = "Integral university";
+                let result = text.bold();
+                document.getElementById("demo1").innerHTML = result;
+            }
+
+        </script>
+        <button onclick="mybold()">
+            Bold letters
+        </button>
+
+    </div>
+
+    <div>
+        <h2>Underline</h2>
+        <div id="myElement">Integral university</div>
+        <br>
+        <button type="button" onclick="underline()">underline</button>
+        <script>
+            function underline() {
+                var element = document.getElementById("myElement");
+                element.style.textDecoration = "underline";
+            }
+        </script>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

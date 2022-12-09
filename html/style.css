@@ -1,0 +1,12 @@
+.clr{
+    color: palevioletred;
+}
+.emphasized {
+    font-style: italic;
+}
+.underlineex {
+    text-decoration: underline;
+}
+.bolded{
+    font-weight: bold;
+}
